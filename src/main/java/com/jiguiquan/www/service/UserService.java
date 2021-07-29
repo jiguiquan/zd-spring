@@ -4,6 +4,7 @@ import com.jiguiquan.www.core.ZdBeanNameAware;
 import com.jiguiquan.www.annotation.ZdAutowired;
 import com.jiguiquan.www.annotation.ZdComponent;
 import com.jiguiquan.www.core.ZdInitializingBean;
+import com.jiguiquan.www.spring.mapper.UserMapper;
 
 /**
  * Created by jiguiquan on 2021/7/22
@@ -13,6 +14,7 @@ import com.jiguiquan.www.core.ZdInitializingBean;
 public class UserService implements ZdBeanNameAware, ZdInitializingBean {
     @ZdAutowired
     private User user;
+
 
     private String beanName;  //需要用过ZdBeanNameWare进行回调
 
